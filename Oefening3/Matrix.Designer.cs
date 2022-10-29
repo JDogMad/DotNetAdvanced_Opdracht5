@@ -1,6 +1,6 @@
 ﻿namespace Oefening3
 {
-    partial class Matrix
+    partial class formMatrix
     {
         /// <summary>
         /// Required designer variable.
@@ -28,19 +28,29 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.colorPicker = new System.Windows.Forms.ColorDialog();
             this.SuspendLayout();
             // 
-            // Matrix
+            // colorPicker
+            // 
+            this.colorPicker.AnyColor = true;
+            this.colorPicker.FullOpen = true;
+            // 
+            // formMatrix
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Name = "Matrix";
+            this.HelpButton = true;
+            this.Name = "formMatrix";
             this.Text = "Matrix";
+            this.Load += new System.EventHandler(this.Matrix_Load);
             this.ResumeLayout(false);
 
         }
 
         #endregion
+
+        private ColorDialog colorPicker;
     }
 }
