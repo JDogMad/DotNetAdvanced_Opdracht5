@@ -1,0 +1,16 @@
+﻿Maak de MDI applicatie GemiddeldeMDI
+
+Maak de MDIParent form zonder controls
+
+Maak het "Gemiddelde" -venster (een "child" van de MDIParent).  Dit bevat een
+ListBox,
+Button ("Nieuw getal")
+TextBox (met label "Gemiddelde")
+
+Wanneer de gebruiker op de Nieuw Getal -knop klikt wordt een dialoogvenster getoond 
+waarin een getal ingegeven kan worden (Tekstveld met label "Waarde:").  
+
+Geef het dialoogvenster een publiek veld om de waarde te returnen naar het hoofdvenster.  
+
+Als de gebruiker een waarde heeft ingegeven en op OK klikt wordt dit getal toegevoegd aan de ListBox 
+in het Gemiddelde-venster en wordt onderaan in het tekstveld het gemiddelde van alle getallen in de ListBox getoond. 
