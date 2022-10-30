@@ -11,8 +11,7 @@
         /// Clean up any resources being used.
         /// </summary>
         /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
-        protected override void Dispose(bool disposing)
-        {
+        protected override void Dispose(bool disposing) {
             if (disposing && (components != null))
             {
                 components.Dispose();
@@ -28,13 +27,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.colorPicker = new System.Windows.Forms.ColorDialog();
             this.SuspendLayout();
-            // 
-            // colorPicker
-            // 
-            this.colorPicker.AnyColor = true;
-            this.colorPicker.FullOpen = true;
             // 
             // formMatrix
             // 
@@ -44,13 +37,13 @@
             this.HelpButton = true;
             this.Name = "formMatrix";
             this.Text = "Matrix";
-            this.Load += new System.EventHandler(this.Matrix_Load);
             this.ResumeLayout(false);
 
         }
 
         #endregion
-
-        private ColorDialog colorPicker;
+        private NumericUpDown n1;
+        private NumericUpDown n2;
+        private NumericUpDown n3;
     }
 }
